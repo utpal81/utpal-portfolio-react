@@ -35,8 +35,6 @@ function Navbar({ darkMode, setDarkMode }) {
   ];
   return (
     <nav>
-      <h2>Utpal Kumar Das</h2>
-
       <ul>
         {navItems.map((item) => (
           <li key={item.name}>
