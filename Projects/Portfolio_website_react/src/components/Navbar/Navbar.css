@@ -37,3 +37,14 @@ nav ul li a {
 nav ul li a:hover {
   color: #3b82f6;
 }
+
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: var(--primary-color);
+}

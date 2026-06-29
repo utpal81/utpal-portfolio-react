@@ -19,7 +19,7 @@ function Navbar({ darkMode, setDarkMode }) {
     },
     {
       name: "Featured Work",
-      href: "#featured-work",
+      href: "#work",
       icon: "fa-briefcase",
     },
     {
@@ -34,17 +34,18 @@ function Navbar({ darkMode, setDarkMode }) {
     },
   ];
   return (
-    <nav>
-      <ul>
+    <nav className="navbar">
+      <ul className="nav-list">
         {navItems.map((item) => (
           <li key={item.name}>
             <a href={item.href}>
-              <i className={`fa-solid ${item.icon}`}></i> {item.name}
+              <i className={`fa-solid ${item.icon}`}></i>
+              <span>{item.name}</span>
             </a>
           </li>
         ))}
       </ul>
-      <button onClick={() => setDarkMode(!darkMode)}>
+      <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
         {darkMode ? "☀️" : "🌙"}
       </button>
     </nav>

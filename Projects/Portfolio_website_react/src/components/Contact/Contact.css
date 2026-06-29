@@ -1,0 +1,87 @@
+.contact {
+  padding: 100px 20px 60px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.contact-grid {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 24px;
+
+  background: white;
+
+  border-radius: var(--radius-medium);
+
+  box-shadow: var(--shadow);
+
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+.contact-card i {
+  font-size: 2rem;
+
+  color: var(--primary-color);
+}
+
+.contact-footer {
+  margin-top: 80px;
+
+  padding-top: 40px;
+
+  border-top: 1px solid var(--border-color);
+
+  text-align: center;
+}
+
+.copyright {
+  color: var(--text-secondary);
+
+  margin-bottom: 10px;
+
+  font-size: 0.95rem;
+}
+
+.designer {
+  color: var(--text-secondary);
+
+  font-size: 0.95rem;
+}
+
+.designer span {
+  color: var(--text-primary);
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.designer span:hover {
+  color: var(--primary-color);
+}

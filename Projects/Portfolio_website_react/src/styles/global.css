@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+
+  color: var(--text-dark);
+
+  background: var(--background-light);
+}
+
+section {
+  width: min(100%, var(--max-width));
+
+  margin: auto;
+
+  scroll-margin-top: 90px;
+
+  padding: 100px 20px;
+}

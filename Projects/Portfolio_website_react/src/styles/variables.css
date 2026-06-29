@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+
+  --primary-color: #2563eb;
+
+  --background-light: #ffffff;
+
+  --background-dark: #121212;
+
+  --text-light: #ffffff;
+
+  --text-dark: #222222;
+
+  --secondary-text: #6b7280;
+
+  /* Border Radius */
+
+  --radius: 12px;
+
+  /* Shadow */
+
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  /* Section Width */
+
+  --max-width: 1200px;
+}

@@ -21,7 +21,7 @@
 }
 
 .hero-title {
-  color: gray;
+  color: var(--text-secondary);
 
   padding: 5px;
 
@@ -46,11 +46,23 @@
 
   border: none;
 
-  border-radius: 8px;
+  border-radius: var(--radius-medium);
 
   cursor: pointer;
 }
 
 .hero-description {
   padding: 5px;
+}
+
+.profile-image {
+  width: 220px;
+
+  height: 220px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 30px;
 }
