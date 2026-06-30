@@ -48,3 +48,8 @@ nav ul li a:hover {
 .nav-list a:hover {
   color: var(--primary-color);
 }
+
+.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}

@@ -1,22 +1,20 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Skills from "./components/Skills/Skills";
-import About from "./components/About/About";
-import FeaturedWork from "./components/FeaturedWork/FeaturedWork.jsx";
-import Contact from "./components/Contact/Contact";
+import Home from "./pages/Home";
+import Insights from "./pages/Insights";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : "light"}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Hero />
-      <About />
-      <Skills />
-      <FeaturedWork />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/insights" element={<Insights />} />
+      </Routes>
     </div>
   );
 }
